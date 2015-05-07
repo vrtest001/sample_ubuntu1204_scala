@@ -6,7 +6,7 @@ scala:
 before_script:
   - export PATH=$PATH:$SHIPPABLE_REPO_DIR
 
-build_image: shippableimages/ubuntu1404_scala
+build_image: shippableimages/ubuntu1204_scala
 
 script:
   - export SBT_OPTS="-XX:+CMSClassUnloadingEnabled -XX:PermSize=256M -XX:MaxPermSize=512M"
