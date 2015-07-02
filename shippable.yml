@@ -3,6 +3,9 @@ language: scala
 scala:
     - 2.11.0
 
+env:
+  - secure: is3Fgw2tVkdPuuNAKBdWxzD2nx6xStr6fFlC0W3uN+l/hzVSTp72I07riGPl3AZSFENQqSxSWsANlfIOgc1a8wcmQyhIPnurPQlHLtxPwVbYQjjE5lDyIg127YFzlFzepXGZPZsZOubks+y7ZekPBqWdzAXZsv+5EUnFegEDZGTq/t+uKEWaqYWbjqaQvYY3uVUw4RiuxCBpJfV+UHcMKxusMD2/CEC5ABSnAPdtd0fu0yFBfiIG6I94cHeZdb1p1dyGgfbvUcz2CZ9UQTG/O3+u9jLx55nnjCpJSRRY4K17rG/6wQ3EISlPA8Dram9UKAJC6z9j+791LRaN2LpZRw== 
+
 before_script:
   - export PATH=$PATH:$SHIPPABLE_REPO_DIR
 
@@ -11,6 +14,7 @@ build_image: shippableimages/ubuntu1204_scala
 script:
   - export SBT_OPTS="-XX:+CMSClassUnloadingEnabled -XX:PermSize=256M -XX:MaxPermSize=512M"
   - sbt clean scoverage:test
+  - echo $key1
 
 after_script:
   - mkdir -p shippable/codecoverage
