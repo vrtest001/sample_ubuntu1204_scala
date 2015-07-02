@@ -2,6 +2,7 @@ language: scala
 
 scala:
     - 2.11.0
+    - 2.10.2
 
 env:
   - secure: ZI4pMu2UUfuXHBWyWHkeRcwgq9qD8u1DdvIove7a62xNSJwokaUNyZCt/fRz+3l4XVShuS8S+DCHEgAjjIibM2//tFSOtsSNNLqRCvO3yz4Ktog11b4wkOBUbtCzinTuuUZgJ834K9AMwO8+4MgocZ+lHyRsTDT6XUV3vSnAs2F7lFAinM/ShQhGypj1EJhiUOfdNIIxKN3sSnQTZkOebvLyKNtOOogEgbL/qm4fOe9dKkOJ4PUJqkMJcnwaRFg0AAZ8BFgcrat51N8ifggpFuzXjDrj6JffpByvjnX+viUAzL7ASuu/dojEjxhaF3GYofYtLSy0FlKSNf+Y7a6W7w== 
